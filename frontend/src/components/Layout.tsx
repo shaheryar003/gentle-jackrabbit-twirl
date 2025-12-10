@@ -26,7 +26,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       const token = localStorage.getItem("access_token");
       if (token) {
         try {
-          const response = await fetch("http://localhost:8000/api/v1/users/me", {
+          const response = await fetch("https://gentle-jackrabbit-twirl-backend.onrender.com/api/v1/users/me", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

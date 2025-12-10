@@ -1,6 +1,6 @@
 import { MuseumTheme, MuseumObject } from "@/types";
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://gentle-jackrabbit-twirl-backend.onrender.com/api/v1";
 
 export async function fetchThemes(): Promise<MuseumTheme[]> {
   const response = await fetch(`${API_BASE_URL}/themes`);
